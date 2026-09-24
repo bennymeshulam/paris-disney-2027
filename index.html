@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>פריז ויורודיסני - בת המצווה של יערה</title>
+<title>פריז ויורודיסני - חגיגת בת המצווה</title>
 
 <style>
   :root {
@@ -19,6 +19,8 @@
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
 
   body {
     background: var(--paper);
@@ -127,8 +129,8 @@
     border-color: var(--forest);
   }
 
-  .day-panel { display: none; }
-  .day-panel.active { display: block; }
+  .day-panel { display: block; margin-bottom: 32px; padding-bottom: 20px; border-bottom: 2px dashed var(--line); }
+  .day-panel:last-child { border-bottom: none; }
 
   .day-title {
     font-family: Georgia, 'Times New Roman', serif;
@@ -319,8 +321,8 @@
 
 <header>
   <h1>🗼 פריז + יורודיסני 2027 🎢</h1>
-  <p>סוף מרץ 2027 · בני, עידית, יערה ואורן + משפחה נוספת</p>
-  <span class="badge">🎉 לכבוד בת המצווה של יערה</span>
+  <p>18-24.3.27 · טיול משפחתי</p>
+  <span class="badge">🎉 לכבוד חגיגת בת המצווה</span>
 </header>
 
 <div class="main-tabs" id="mainTabs">
@@ -336,185 +338,205 @@
 <div class="main-panel active" id="panel-itinerary">
 
   <div class="day-note">
-    📌 לוח הזמנים המדויק עדיין גמיש - פורים 2027 חל ביום שלישי 23.3, חופשת ביה"ס הרשמית היא רק 23-24.3 (חוזרים ללימודים ב-25.3). התאריכים כאן הם הצעה לתכנון, נעדכן לפי הטיסות בפועל.
+    📌 תאריכים סופיים לפי הכרטיס בפועל (אל על, אישור YNPRWG): 18-24.3.27 (7 ימים). טיסת הלוך TLV 05:35→CDG 09:45 (בוקר!), טיסת חזור CDG 14:45→TLV 20:10 (צהריים, לא ערב). 6 לילות: 2 לילות פריז + 3 לילות יורודיסני + לילה בחזרה.
   </div>
 
   <div class="tabs" id="dayTabs">
-    <button class="tab-btn active" data-day="1">יום 1</button>
-    <button class="tab-btn" data-day="2">יום 2</button>
-    <button class="tab-btn" data-day="3">יום 3</button>
-    <button class="tab-btn" data-day="4">יום 4</button>
-    <button class="tab-btn" data-day="5">יום 5</button>
-    <button class="tab-btn" data-day="6">יום 6</button>
-    <button class="tab-btn" data-day="7">יום 7</button>
-    <button class="tab-btn" data-day="8">יום 8</button>
+    <a class="tab-btn" href="#day-1">יום 1</a>
+    <a class="tab-btn" href="#day-2">יום 2</a>
+    <a class="tab-btn" href="#day-3">יום 3</a>
+    <a class="tab-btn" href="#day-4">יום 4</a>
+    <a class="tab-btn" href="#day-5">יום 5</a>
+    <a class="tab-btn" href="#day-6">יום 6</a>
+    <a class="tab-btn" href="#day-7">יום 7</a>
   </div>
 
   <!-- יום 1 -->
-  <div class="day-panel active" id="day-1">
-    <div class="day-title">יום 1 · רביעי 24.3.27 · פורים + טיסה</div>
+  <div class="day-panel" id="day-1">
+    <div class="day-title">יום 1 · חמישי 18.3.27 · טיסה + אחה"צ חופשי בפריז</div>
 
-    <div class="stop">
-      <div class="stop-time">בוקר-צהריים</div>
-      <div class="stop-name">פורים בארץ</div>
-      <div class="stop-desc">משלוח מנות, תחפושות, ולחוגג את פורים בבית לפני היציאה לטיול.</div>
+    <div class="day-note">
+      ✈️ לפי הכרטיס בפועל (אל על, אישור YNPRWG): טיסה TLV 05:35 → CDG 09:45. נוחתים בבוקר מוקדם - יש כמעט יום שלם פנוי!
     </div>
 
     <div class="stop">
-      <div class="stop-time">ערב</div>
-      <div class="stop-name">טיסה לפריז (CDG)</div>
-      <div class="stop-desc">לבדוק טיסות עם נחיתה נוחה בבוקר - להימנע מנחיתה מאוחרת מדי בלילה עם ילדים.</div>
+      <div class="stop-time">05:35</div>
+      <div class="stop-name">טיסה לישראל → פריז (CDG)</div>
+      <div class="stop-desc">יציאה משדה התעופה בן גוריון בבוקר מוקדם. טיסה ישירה אל על, כ-4 שעות טיסה. חשוב: להגיע לנתב"ג לפחות 3 שעות מראש בגלל שעת הבוקר המוקדמת.</div>
       <div class="badge-row">
-        <span class="stamp">✈️ טיסה</span>
+        <span class="stamp">✈️ LY325</span>
       </div>
     </div>
-  </div>
-
-  <!-- יום 2 -->
-  <div class="day-panel" id="day-2">
-    <div class="day-title">יום 2 · חמישי 25.3.27 · הגעה + אייפל</div>
 
     <div class="stop">
-      <div class="stop-time">בוקר</div>
+      <div class="stop-time">09:45</div>
       <div class="stop-name">נחיתה ב-CDG → מלון בברסי</div>
-      <div class="stop-desc">RER B מ-CDG עד Châtelet-Les Halles, מעבר רציף ל-RER A עד Gare de Lyon. כ-45-55 דקות, ~10-13€ למבוגר.</div>
+      <div class="stop-desc">איך יוצאים משדה התעופה שארל דה גול: אחרי הנחיתה ופסי הבידוק, לעקוב אחרי שילוט "RER" בטרמינל (טרמינל 2 - יש תחנת רכבת ממש מתחת לטרמינל, לא צריך הסעה). לוקחים RER B בכיוון פריז עד תחנת Châtelet-Les Halles, שם עוברים רציף (באותו מתחם, בלי לצאת החוצה) ל-RER A מזרחה, יורדים תחנה אחת ב-Gare de Lyon. סה"כ כ-45-55 דקות, כרטיס מבוגר כ-10-13€, ילד כ-7€.</div>
       <div class="badge-row">
         <span class="stamp">🚆 RER B+A</span>
         <a class="map-btn" href="https://www.google.com/maps/dir/?api=1&origin=Charles+de+Gaulle+Airport&destination=Gare+de+Lyon+Paris&travelmode=transit" target="_blank">📍 מסלול מלא</a>
+        <a class="map-btn" href="https://www.iledefrance-mobilites.fr/" target="_blank">🎟️ כרטיסים - Ile-de-France Mobilités</a>
       </div>
     </div>
 
     <div class="hop">🚶 ~5 דק' הליכה מ-Gare de Lyon למלון · <a href="https://www.google.com/maps/dir/?api=1&origin=Gare+de+Lyon+Paris&destination=Adagio+Paris+Bercy+Village&travelmode=walking" target="_blank">מסלול הליכה</a></div>
 
     <div class="stop">
-      <div class="stop-time">צהריים</div>
+      <div class="stop-time">~11:00</div>
       <div class="stop-name">צ'ק-אין - Adagio Bercy Village</div>
-      <div class="stop-desc">דירת Coliving (עד 8) + דירה נוספת. השארת מזוודות והתארגנות קלה.</div>
+      <div class="stop-desc">צ'ק-אין רשמי בד"כ רק מ-15:00, אבל שווה לבקש צ'ק-אין מוקדם או להפקיד מזוודות בקבלה כדי לצאת חופשיים לסייר.</div>
       <div class="badge-row">
         <a class="map-btn" href="https://maps.google.com/?q=Adagio+Paris+Bercy+Village" target="_blank">📍 מפה</a>
       </div>
     </div>
 
-    <div class="hop">🚇 ~30 דק' (קו 6, Daumesnil → Bir-Hakeim, ללא החלפה) · <a href="https://www.google.com/maps/dir/?api=1&origin=Adagio+Paris+Bercy+Village&destination=Eiffel+Tower&travelmode=transit" target="_blank">מסלול תחבורה ציבורית</a></div>
+    <div class="stop">
+      <div class="stop-time">אחה"צ</div>
+      <div class="stop-name">סיור קליל בשכונה - שוק אליגר וברסי</div>
+      <div class="stop-desc">אחרי לילה בלי שינה מלא, כדאי משהו קליל ולא תובעני: הליכה בשוק Marché d'Aligre הסמוך, פארק דה ברסי, בלי לחץ. שומרים כוח לימים הכבדים יותר.</div>
+      <div class="badge-row">
+        <a class="map-btn" href="https://maps.google.com/?q=Parc+de+Bercy+Paris" target="_blank">📍 מפה</a>
+      </div>
+    </div>
 
     <div class="stop">
-      <div class="stop-time">אחה"צ-ערב</div>
+      <div class="stop-time">ערב</div>
+      <div class="stop-name">🍽️ ארוחת ערב - ביסטרו ליד השוק</div>
+      <div class="stop-desc">אזור Rue d'Aligre / Rue de Cotte (כ-10 דק' הליכה מהמלון) - ביסטרו שכונתי אמיתי, לא תיירותי. לישון מוקדם - מחר יום מלא.</div>
+      <div class="badge-row">
+        <a class="map-btn" href="https://maps.google.com/?q=Rue+d%27Aligre+Paris" target="_blank">📍 מפה</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- יום 2 -->
+  <div class="day-panel" id="day-2">
+    <div class="day-title">יום 2 · שישי 19.3.27 · לובר + אייפל + שיט</div>
+
+    <div class="day-note">
+      יום עמוס יחסית (3 עצירות) - הלובר מקוצר בכוונה ל-2 שעות כדי שיישאר זמן ואנרגיה לאייפל ולשיט בערב. בונוס: יום שישי = פתיחה מאוחרת בלובר עד 21:45.
+    </div>
+
+    <div class="hop">🚇 ~18 דק' (קו 1 ישיר, Gare de Lyon → Palais Royal-Musée du Louvre) · <a href="https://www.google.com/maps/dir/?api=1&origin=Adagio+Paris+Bercy+Village&destination=Louvre+Museum&travelmode=transit" target="_blank">מסלול תחבורה ציבורית</a></div>
+
+    <div class="stop">
+      <div class="stop-time">בוקר</div>
+      <div class="stop-name">מוזיאון הלובר (מסלול מקוצר)</div>
+      <div class="stop-desc">פתוח כל השבוע חוץ מיום ג'. מחיר מבוגר (לא-אזרח אירופה) 32€, מתחת לגיל 18 חינם. חובה סלוט זמן מוזמן מראש. 💡 עם הילדים כדאי לשקול סיור "ציד אוצרות" משפחתי מודרך (כ-2 שעות, חוברת פעילות לפי גיל 3-6 או 7-12, מדורג 4.7-4.9 כוכבים).</div>
+      <div class="badge-row">
+        <span class="stamp">🚇 מטרו</span>
+        <a class="map-btn" href="https://maps.google.com/?q=Louvre+Museum" target="_blank">📍 מפה</a>
+        <a class="map-btn" href="https://ticket.louvre.fr/en" target="_blank">🎟️ הזמנה רשמית</a>
+        <a class="map-btn" href="https://www.louvre.co.il/" target="_blank">🔗 מידע בעברית</a>
+      </div>
+    </div>
+
+    <div class="hop">🚶 ~3 דק' הליכה · <a href="https://www.google.com/maps/dir/?api=1&origin=Louvre+Museum&destination=Jardin+des+Tuileries&travelmode=walking" target="_blank">מסלול הליכה</a></div>
+
+    <div class="stop">
+      <div class="stop-time">צהריים</div>
+      <div class="stop-name">🎈 הפסקת ילדים - גני הטווילרי</div>
+      <div class="stop-desc">ממש ליד הלובר - טרמפולינות, סירות צעצוע להשכרה, מתקני משחקים ומרחב פתוח לרוץ בו. כניסה לגן חינם, המתקנים בתשלום קטן. גם ארוחת צהריים קלה כאן.</div>
+      <div class="badge-row">
+        <a class="map-btn" href="https://maps.google.com/?q=Jardin+des+Tuileries" target="_blank">📍 מפה</a>
+      </div>
+    </div>
+
+    <div class="hop">🚇 ~30 דק' (קו 6, Daumesnil → Bir-Hakeim, ללא החלפה) · <a href="https://www.google.com/maps/dir/?api=1&origin=Jardin+des+Tuileries&destination=Eiffel+Tower&travelmode=transit" target="_blank">מסלול תחבורה ציבורית</a></div>
+
+    <div class="stop">
+      <div class="stop-time">אחה"צ</div>
       <div class="stop-name">מגדל אייפל + טרוקדרו</div>
       <div class="stop-desc">שעות (עונה רגילה, ספט-יוני): מעלית 09:30-23:00 (כניסה אחרונה 22:30), מדרגות עד 23:45. מחיר למבוגר (לא-אזרח האיחוד): פסגה במעלית ~36.70€, קומה 2 במעלית ~20€, מדרגות ~14.80€. ילד 4-11 כ-8-9€, מתחת לגיל 4 חינם. מחירים מ-2026, לאמת שוב קרוב לתאריך.</div>
       <div class="badge-row">
         <span class="stamp">🚇 מטרו</span>
         <a class="map-btn" href="https://maps.google.com/?q=Eiffel+Tower" target="_blank">📍 מפה</a>
         <a class="map-btn" href="https://ticket.toureiffel.paris/en" target="_blank">🎟️ הזמנה רשמית</a>
+        <a class="map-btn" href="https://www.eiffeltower.co.il/" target="_blank">🔗 מידע בעברית</a>
+      </div>
+    </div>
+
+    <div class="hop">🚇 ~20 דק' לרציף השיט (קרוב לאייפל) · <a href="https://www.google.com/maps/dir/?api=1&origin=Eiffel+Tower&destination=Pont+Neuf+Paris&travelmode=transit" target="_blank">מסלול תחבורה ציבורית</a></div>
+
+    <div class="stop">
+      <div class="stop-time">ערב</div>
+      <div class="stop-name">שיט על הסן</div>
+      <div class="stop-desc">שיט תיירותי קלאסי בשקיעה - טוב לילדים אחרי יום הליכה ארוך. הערכה - לא מאומת סופית: כ-15-20€ למבוגר, הנחת ילד. מפעילים מוכרים: Bateaux Parisiens (יש רציף גם ליד האייפל עצמו, פחות הליכה).</div>
+      <div class="badge-row">
+        <a class="map-btn" href="https://maps.google.com/?q=Bateaux+Parisiens+Eiffel+Tower" target="_blank">📍 מפה</a>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="stop-time">ערב מאוחר</div>
+      <div class="stop-name">🍽️ ארוחת ערב - המארה</div>
+      <div class="stop-desc">אחרי השיט, אפשר לרדת באזור המארה (רובע 4) לארוחת ערב - שכונה תוססת עם ביסטרות אמיתיות, לא רק מלכודות תיירים ליד האתרים הראשיים. משתלב טוב עם המסלול של היום.</div>
+      <div class="badge-row">
+        <a class="map-btn" href="https://maps.google.com/?q=Le+Marais+Paris" target="_blank">📍 מפה</a>
       </div>
     </div>
   </div>
 
   <!-- יום 3 -->
   <div class="day-panel" id="day-3">
-    <div class="day-title">יום 3 · שישי 26.3.27 · הלובר + האי</div>
+    <div class="day-title">יום 3 · שבת 20.3.27 · יום שלם בוורסאי</div>
 
-    <div class="hop">🚇 ~18 דק' (קו 1 ישיר, Gare de Lyon → Palais Royal-Musée du Louvre) · <a href="https://www.google.com/maps/dir/?api=1&origin=Adagio+Paris+Bercy+Village&destination=Louvre+Museum&travelmode=transit" target="_blank">מסלול תחבורה ציבורית</a></div>
+    <div class="day-note">
+      ✨ ארמון ורסאי - אתר שבאמת "שווה לטוס בשבילו מישראל". ארמון מלכותי ענק, אולם המראות המפורסם, וגנים עצומים עם סירות משוט ו"חוות מארי אנטואנט" עם בעלי חיים אמיתיים - נחשב הפעילות האהובה ביותר על ילדים בביקור.
+      <br><br>💡 יש חלופה מעניינת ליום הזה - ארמון פונטנבלו, פחות עמוס ולא פחות מרשים. פירוט מלא בטאב "אופציות נוספות".
+    </div>
+
+    <div class="hop">🚆 ~40 דק' (RER C, Gare de Lyon → Versailles Château Rive Gauche, עם החלפה בדרך) · <a href="https://www.google.com/maps/dir/?api=1&origin=Adagio+Paris+Bercy+Village&destination=Versailles+Chateau+Rive+Gauche&travelmode=transit" target="_blank">מסלול תחבורה ציבורית</a></div>
 
     <div class="stop">
       <div class="stop-time">בוקר</div>
-      <div class="stop-name">מוזיאון הלובר</div>
-      <div class="stop-desc">פתוח כל השבוע חוץ מיום ג'. יום שישי - פתיחה מאוחרת עד 21:45 (כניסה אחרונה שעה לפני סגירה). מחיר מבוגר (לא-אזרח אירופה) 32€, מתחת לגיל 18 חינם. חובה סלוט זמן מוזמן מראש. 💡 טיפ: הלובר עצום - עם ילדים כדאי להגדיר מראש מסלול ממוקד של כ-90 דקות (מונה ליזה, ניקת סמותרס, ונוס דה מילו) במקום לנסות "לראות הכל" ולהגיע שחוקים להמשך היום.</div>
+      <div class="stop-name">ארמון ורסאי - פנים הארמון</div>
+      <div class="stop-desc">סגור בימי שני (אנחנו ביום שבת - פתוח, אבל שבתות נוטות להיות קצת יותר עמוסות). שעות: 09:00-18:30. עונה נמוכה (מרץ, לפני 1.4): כרטיס פספורט (הכל כלול) 25€ מבוגר, כרטיס ארמון בלבד ~19-21€. מתחת לגיל 18 חינם! גני הארמון בעונה הנמוכה - כניסה חינם. מומלץ: מדריך שמע לילדים (אנגלית/צרפתית) כלול. עגלות אסורות בפנים הארמון.</div>
       <div class="badge-row">
-        <span class="stamp">🚇 מטרו</span>
-        <a class="map-btn" href="https://maps.google.com/?q=Louvre+Museum" target="_blank">📍 מפה</a>
-        <a class="map-btn" href="https://ticket.louvre.fr/en" target="_blank">🎟️ הזמנה רשמית</a>
+        <a class="map-btn" href="https://maps.google.com/?q=Palace+of+Versailles" target="_blank">📍 מפה</a>
+        <a class="map-btn" href="https://en.chateauversailles.fr/plan-your-visit/tickets-and-prices" target="_blank">🎟️ הזמנה רשמית</a>
       </div>
     </div>
-
-    <div class="hop">🚶 ~18 דק' הליכה לאורך הסן · <a href="https://www.google.com/maps/dir/?api=1&origin=Louvre+Museum&destination=Sainte+Chapelle+Paris&travelmode=walking" target="_blank">מסלול הליכה</a></div>
 
     <div class="stop">
       <div class="stop-time">צהריים</div>
-      <div class="stop-name">Sainte-Chapelle</div>
-      <div class="stop-desc">⚠️ סגור לכניסה 13:00-14:15 בימי חול (הפסקת צהריים) - חשוב לתזמן סביב זה. מחיר מבוגר (לא-EEA) 22€, ילדים עד 18 (עם משפחה) חינם.</div>
-      <div class="badge-row">
-        <a class="map-btn" href="https://maps.google.com/?q=Sainte+Chapelle+Paris" target="_blank">📍 מפה</a>
-        <a class="map-btn" href="https://www.sainte-chapelle.fr/en" target="_blank">🎟️ הזמנה רשמית</a>
-      </div>
+      <div class="stop-name">ארוחת צהריים בשטח</div>
+      <div class="stop-desc">יש קפטריות בתוך השטח, אבל מחירים גבוהים - שווה לשקול פיקניק/כריכים שמביאים מהעיר לגנים.</div>
     </div>
-
-    <div class="hop">🚶 ~5 דק' הליכה · <a href="https://www.google.com/maps/dir/?api=1&origin=Sainte+Chapelle+Paris&destination=Notre+Dame+Cathedral+Paris&travelmode=walking" target="_blank">מסלול הליכה</a></div>
 
     <div class="stop">
       <div class="stop-time">אחה"צ</div>
-      <div class="stop-name">נוטרדאם (חזית + פנים)</div>
-      <div class="stop-desc">כניסה חינם. שעות יום שישי: 07:50-19:00, כניסה אחרונה 30 דק' לפני סגירה. עדיין בתהליכי שיקום חלקיים מבחוץ אחרי השריפה, אבל הפנים פתוח לביקור מאז דצמבר 2024. מגדלי הפעמונים (16€, הזמנה מראש בלבד) - אופציונלי, לא הכרחי.</div>
+      <div class="stop-name">הגנים + חוות מארי אנטואנט (Trianon Estate)</div>
+      <div class="stop-desc">זו החוויה שהילדים הכי אוהבים: סירות משוט להשכרה בתעלה הגדולה, הליכה/רכיבה על אופניים בגנים העצומים, וה"חווה" הכפרית של מארי אנטואנט עם בעלי חיים אמיתיים. דומיין טריאנון פתוח מ-12:00. חשוב: כרטיס פספורט כולל את זה, כרטיס ארמון בלבד לא.</div>
       <div class="badge-row">
-        <span class="stamp">🚶 הליכה</span>
-        <a class="map-btn" href="https://maps.google.com/?q=Notre+Dame+Cathedral+Paris" target="_blank">📍 מפה</a>
+        <a class="map-btn" href="https://maps.google.com/?q=Domaine+de+Trianon+Versailles" target="_blank">📍 מפה</a>
       </div>
     </div>
 
-    <div class="hop">🚶 ~5 דק' הליכה לרציף השיט · <a href="https://www.google.com/maps/dir/?api=1&origin=Notre+Dame+Cathedral+Paris&destination=Pont+Neuf+Paris&travelmode=walking" target="_blank">מסלול הליכה</a></div>
+    <div class="hop">🚆 ~40 דק' חזרה לפריז · <a href="https://www.google.com/maps/dir/?api=1&origin=Versailles+Chateau+Rive+Gauche&destination=Gare+de+Lyon+Paris&travelmode=transit" target="_blank">מסלול תחבורה ציבורית</a></div>
 
     <div class="stop">
       <div class="stop-time">ערב</div>
-      <div class="stop-name">שיט על הסן</div>
-      <div class="stop-desc">שיט תיירותי קלאסי בשקיעה - טוב לילדים אחרי יום הליכה ארוך. הערכה - לא מאומת סופית: כ-15-20€ למבוגר, הנחת ילד. מפעילים מוכרים: Bateaux Parisiens או Vedettes du Pont Neuf - לבדוק מחיר מדויק ולוח שייטים באתר הרשמי.</div>
+      <div class="stop-name">🎉🍽️ ארוחת חגיגה - בת המצווה - Le Train Bleu</div>
+      <div class="stop-desc">ברזרי מרשימה ממש בתוך Gare de Lyon (5 דק' מהמלון!) - תקרות מצוירות מ-1900, מונומנט היסטורי. חוויה "וואו" מתאימה לחגיגה, ונוחה מאוד כי זה ליד המלון. חובה להזמין מקום מראש.</div>
       <div class="badge-row">
-        <a class="map-btn" href="https://maps.google.com/?q=Pont+Neuf+Paris" target="_blank">📍 מפה</a>
+        <a class="map-btn" href="https://maps.google.com/?q=Le+Train+Bleu+Gare+de+Lyon+Paris" target="_blank">📍 מפה</a>
       </div>
     </div>
   </div>
 
   <!-- יום 4 -->
   <div class="day-panel" id="day-4">
-    <div class="day-title">יום 4 · שבת 27.3.27 · מונמארטר + בת המצווה</div>
+    <div class="day-title">יום 4 · ראשון 21.3.27 · מעבר + Disneyland Park (חצי יום)</div>
 
-    <div class="hop">🚇 ~35 דק' (עם החלפה אחת) · <a href="https://www.google.com/maps/dir/?api=1&origin=Adagio+Paris+Bercy+Village&destination=Sacre+Coeur+Montmartre&travelmode=transit" target="_blank">מסלול תחבורה ציבורית</a></div>
-
-    <div class="stop">
-      <div class="stop-time">בוקר</div>
-      <div class="stop-name">מונמארטר וסקרה-קר</div>
-      <div class="stop-desc">כניסה לבזיליקה חינם. עליה לכיפה (300 מדרגות) - כ-7-8€, שעות משתנות לפי עונה (מרץ-אפריל בערך 09:30-19:00, כניסה אחרונה כחצי שעה לפני סגירה) - לבדוק באתר הרשמי יום לפני הביקור כי משתנה גם לפי מזג אוויר. 💡 טיפ: שבת בבוקר האזור מוצף תיירים - כדאי להגיע לפני 10:00 כדי ליהנות מהאווירה לפני הגל הגדול.</div>
-      <div class="badge-row">
-        <span class="stamp">🚇 מטרו</span>
-        <a class="map-btn" href="https://maps.google.com/?q=Sacre+Coeur+Montmartre" target="_blank">📍 מפה</a>
-        <a class="map-btn" href="https://www.sacre-coeur-montmartre.com/en" target="_blank">🎟️ אתר רשמי</a>
-      </div>
+    <div class="day-note">
+      💡 במקום יום מעבר "ריק" בנפרד, נכנסים לפארק כבר באותו אחה"צ.
     </div>
-
-    <div class="hop">🚇 ~35-40 דק' חזרה לכיוון מחוז 12 · <a href="https://www.google.com/maps/dir/?api=1&origin=Sacre+Coeur+Montmartre&destination=Marche+d%27Aligre+Paris&travelmode=transit" target="_blank">מסלול תחבורה ציבורית</a></div>
-
-    <div class="stop">
-      <div class="stop-time">צהריים</div>
-      <div class="stop-name">שוק Marché d'Aligre</div>
-      <div class="stop-desc">שוק שכונתי אמיתי ליד המלון - ירקות, גבינות, עוף בגריל. טוב לארוחת צהריים קלה ולא תיירותית. פתוח כל השבוע חוץ מיום שני (הטיול שלנו ביום שבת - פתוח: השוק הפתוח 07:30-14:30, השוק המקורה 09:00-19:30). כניסה חינם.</div>
-      <div class="badge-row">
-        <span class="stamp">🚶 הליכה</span>
-        <a class="map-btn" href="https://maps.google.com/?q=Marche+d%27Aligre+Paris" target="_blank">📍 מפה</a>
-      </div>
-    </div>
-
-    <div class="hop">⏱️ זמן הגעה למסעדת החגיגה - נעדכן לאחר שנבחר מקום</div>
-
-    <div class="stop">
-      <div class="stop-time">ערב</div>
-      <div class="stop-name">🎉 ארוחת חגיגה - בת המצווה של יערה</div>
-      <div class="stop-desc">שתי אופציות אמיתיות שמתאימות לקבוצה גדולה (7-9 אנשים) ומזמינות מראש:</div>
-      <div class="badge-row">
-        <span class="stamp veg">🥦 לבדוק אופציה צמחונית</span>
-      </div>
-      <ul style="margin-top:10px; padding-right:18px; font-size:14px; color:var(--ink-soft);">
-        <li><b>Le Train Bleu</b> - ממש בתוך Gare de Lyon, 5 דק' מהמלון! ברזרי מרשימה עם תקרות מצוירות מ-1900, מונומנט היסטורי. חוויה "וואו" מתאימה לחגיגה.</li>
-        <li><b>Bouillon Julien</b> - ברזרי אר-נובו אותנטית ברובע 10, מקבלת קבוצות מ-15 איש, מחירים סבירים (בוסתן פריזאי אמיתי, לא תפאורה תיירותית).</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- יום 5 -->
-  <div class="day-panel" id="day-5">
-    <div class="day-title">יום 5 · ראשון 28.3.27 · מעבר ליורודיסני</div>
 
     <div class="stop">
       <div class="stop-time">בוקר</div>
       <div class="stop-name">בוקר חופשי / צ'ק-אאוט</div>
-      <div class="stop-desc">זמן גמיש - חנות אחרונה, פרפה בבוקר, אריזה.</div>
+      <div class="stop-desc">זמן גמיש - חנות אחרונה, ארוחת בוקר, אריזה.</div>
     </div>
 
     <div class="hop">🚶 ~5 דק' הליכה למלון → Gare de Lyon · <a href="https://www.google.com/maps/dir/?api=1&origin=Adagio+Paris+Bercy+Village&destination=Gare+de+Lyon+Paris&travelmode=walking" target="_blank">מסלול הליכה</a></div>
@@ -529,39 +551,48 @@
       </div>
     </div>
 
-    <div class="hop">🚌 ~10-15 דק' שאטל חינם מהתחנה למלון (חוץ מ-Davy Crockett Ranch)</div>
+    <div class="hop">🚶 ~5-8 דק' הליכה מהתחנה למלון (Disneyland Hotel קרוב מאוד, בלי צורך בשאטל)</div>
 
     <div class="stop">
-      <div class="stop-time">אחה"צ</div>
+      <div class="stop-time">אחה"צ מוקדם</div>
       <div class="stop-name">צ'ק-אין במלון הדיסני</div>
-      <div class="stop-desc">Sequoia Lodge או Cheyenne - לבחור. Extra Magic Time מתחיל לפעול מהיום הראשון. 💡 לאורחי מלון רשמי, כרטיסי הפארק תקפים כבר מרגע ההגעה - אפשר להפקיד מזוודות בשירות המטען של המלון ולהיכנס לפארק/ל-Disney Village כבר באותו אחה"צ, בלי לחכות למחר.</div>
+      <div class="stop-desc">Disneyland Hotel (5 כוכבים, ממש בכניסה לפארק). 💡 לאורחי מלון רשמי, כרטיסי הפארק תקפים כבר מרגע ההגעה - אפשר להפקיד מזוודות בשירות המטען של המלון ולהיכנס לפארק ישר אחה"צ. הכניסה הייעודית מהמלון ישר לתוך Disneyland Park חוסכת גם הליכה.</div>
+    </div>
+
+    <div class="stop">
+      <div class="stop-time">אחה"צ-ערב</div>
+      <div class="stop-name">Disneyland Park (חצי יום)</div>
+      <div class="stop-desc">עם ילדים בני 9-12 רוב המתקנים פתוחים, אבל כמה רכבות הרים (כמו Big Thunder Mountain) עם מגבלת גובה מינימלית - כדאי לבדוק באפליקציה. מומלץ לתעדף 3-4 מתקנים "חובה" ולא לנסות "לכסות הכל" ביום חלקי.</div>
+      <div class="badge-row">
+        <span class="stamp">🎢 חצי יום</span>
+      </div>
     </div>
 
     <div class="stop">
       <div class="stop-time">ערב</div>
-      <div class="stop-name">Disney Village</div>
-      <div class="stop-desc">היכרות ראשונה עם השטח, ארוחת ערב קלה (Earl of Sandwich / Five Guys), בלי לחץ - עוד לא נכנסים לפארק.</div>
+      <div class="stop-name">ארוחת ערב - Disney Village</div>
+      <div class="stop-desc">אפשר לבחור מבין המסעדות בכפר - Earl of Sandwich או Five Guys למשהו קליל ומהיר, או Rainforest Café לחוויה יותר "אירוע" (חובה הזמנה).</div>
     </div>
   </div>
 
-  <!-- יום 6 -->
-  <div class="day-panel" id="day-6">
-    <div class="day-title">יום 6 · שני 29.3.27 · Disneyland Park</div>
+  <!-- יום 5 -->
+  <div class="day-panel" id="day-5">
+    <div class="day-title">יום 5 · שני 22.3.27 · Disneyland Park (יום מלא)</div>
 
     <div class="day-note">
-    📏 עם ילדים בני 6-13 רוב המתקנים פתוחים, אבל כמה רכבות הרים (כמו Big Thunder Mountain, Crush's Coaster) עם מגבלת גובה מינימלית (בד"כ 81-120 ס"מ בהתאם למתקן) - כדאי לבדוק בכניסה או באפליקציה לפני שמתכננים תור ליד ילד נמוך יותר.
+      📏 עם ילדים בני 9-12 רוב המתקנים פתוחים, אבל כמה רכבות הרים עם מגבלת גובה מינימלית (בד"כ 81-120 ס"מ) - חשוב לבדוק באפליקציה מראש.
     </div>
 
     <div class="stop">
       <div class="stop-time">בוקר מוקדם</div>
       <div class="stop-name">Extra Magic Time</div>
-      <div class="stop-desc">כניסה מוקדמת 30-60 דק' לפני הקהל הרחב. שימו לב: World of Frozen נמצא ב-Disney Adventure World (יום 7), לא כאן - ביום הזה כדאי לתעדף את Space Mountain / Big Thunder Mountain / Peter Pan's Flight לפני שהתורים מתארכים.</div>
+      <div class="stop-desc">כניסה מוקדמת 30-60 דק' לפני הקהל הרחב. שימו לב: World of Frozen נמצא ב-Disney Adventure World (יום 6), לא כאן - ביום הזה כדאי לתעדף את Space Mountain / Big Thunder Mountain / Peter Pan's Flight.</div>
     </div>
 
     <div class="stop">
       <div class="stop-time">כל היום</div>
-      <div class="stop-name">Disneyland Park</div>
-      <div class="stop-desc">שעות פתיחה מדויקות יתפרסמו רק כ-3 חודשים מראש (סביב דצמבר 26'). נעדכן כשיתפרסם.</div>
+      <div class="stop-name">Disneyland Park - יום מלא</div>
+      <div class="stop-desc">משלימים כל מה שלא הספיקו אתמול. שעות פתיחה מדויקות יתפרסמו רק כ-3 חודשים מראש (סביב דצמבר 26').</div>
     </div>
 
     <div class="stop">
@@ -571,9 +602,9 @@
     </div>
   </div>
 
-  <!-- יום 7 -->
-  <div class="day-panel" id="day-7">
-    <div class="day-title">יום 7 · שלישי 30.3.27 · Disney Adventure World</div>
+  <!-- יום 6 -->
+  <div class="day-panel" id="day-6">
+    <div class="day-title">יום 6 · שלישי 23.3.27 · Disney Adventure World</div>
 
     <div class="stop">
       <div class="stop-time">בוקר מוקדם</div>
@@ -584,7 +615,7 @@
     <div class="stop">
       <div class="stop-time">כל היום</div>
       <div class="stop-name">Disney Adventure World (לשעבר Walt Disney Studios)</div>
-      <div class="stop-desc">Avengers Campus, Worlds of Pixar, World of Frozen. יום שני בפארקים - אפשר גם לחזור ל-Disneyland Park לרכיבה אהובה בערב.</div>
+      <div class="stop-desc">Avengers Campus, Worlds of Pixar, World of Frozen. יום שני בפארקים - אפשר גם לחזור ל-Disneyland Park בערב.</div>
     </div>
 
     <div class="stop">
@@ -594,22 +625,26 @@
     </div>
   </div>
 
-  <!-- יום 8 -->
-  <div class="day-panel" id="day-8">
-    <div class="day-title">יום 8 · רביעי 31.3.27 · חזרה הביתה</div>
+  <!-- יום 7 -->
+  <div class="day-panel" id="day-7">
+    <div class="day-title">יום 7 · רביעי 24.3.27 · חזרה הביתה</div>
 
-    <div class="stop">
-      <div class="stop-time">בוקר</div>
-      <div class="stop-name">צ'ק-אאוט מהמלון בדיסני</div>
-      <div class="stop-desc">אם הטיסה בצהריים/אחה"צ - אפשר עוד שעה-שעתיים ב-Disney Village או בפארק לפני שיוצאים (יש לבדוק Baggage/Early check-in לצ'ק-אין טיסה).</div>
+    <div class="day-note">
+      ✈️ לפי הכרטיס בפועל: טיסה CDG 14:45 → TLV 20:10. זה אומר **בוקר מוגבל** - לא יישאר זמן לפארק או ל-Disney Village, צריך לצאת מהמלון מוקדם.
     </div>
 
-    <div class="hop">🚌 ~10-15 דק' שאטל למלון → תחנת Chessy</div>
+    <div class="stop">
+      <div class="stop-time">08:30-09:00</div>
+      <div class="stop-name">צ'ק-אאוט מהמלון בדיסני</div>
+      <div class="stop-desc">חייבים לצאת מוקדם - עם טיסה ב-14:45 והצורך להגיע ל-CDG עם מרווח ביטחון, אין זמן לפארק הבוקר. לארוז בערב הקודם כדי לחסוך זמן.</div>
+    </div>
+
+    <div class="hop">🚶 ~5-8 דק' הליכה מהמלון לתחנת Chessy</div>
 
     <div class="stop">
-      <div class="stop-time">צהריים</div>
+      <div class="stop-time">09:15-09:30</div>
       <div class="stop-name">Chessy → Châtelet-Les Halles → CDG</div>
-      <div class="stop-desc">RER A מ-Chessy עד Châtelet-Les Halles, מעבר ל-RER B עד CDG. סה"כ כ-60-70 דקות עם ההחלפה. לא צריך לחזור למרכז פריז או למלון בברסי - יוצאים ישירות מדיסני.</div>
+      <div class="stop-desc">RER A מ-Chessy עד Châtelet-Les Halles, מעבר ל-RER B עד CDG. סה"כ כ-60-70 דקות עם ההחלפה - מגיעים לשדה כ-10:30-11:00, מרווח בטוח של כ-3.5-4 שעות לפני הטיסה.</div>
       <div class="badge-row">
         <span class="stamp">🚆 RER A+B</span>
         <a class="map-btn" href="https://www.google.com/maps/dir/?api=1&origin=Marne-la-Vallee+Chessy+RER+Station&destination=Charles+de+Gaulle+Airport&travelmode=transit" target="_blank">📍 מסלול מלא</a>
@@ -620,10 +655,10 @@
       <span class="pick-tag">✓ עדיף - מאומת</span>
       <h3>🚄 חלופה: TGV ישיר מ-Chessy ל-CDG</h3>
       <ul>
-        <li>קיים קו TGV ישיר מתחנת Marne-la-Vallée Chessy (ממש ליד הפארק) ישירות ל-CDG2 TGV - נסיעה של כ-10-11 דקות בלבד!</li>
-        <li>הרבה יותר נוח מ-RER A+B עם 9 אנשים ומזוודות - בלי החלפה באמצע</li>
-        <li>⚠️ לא תדיר - כ-3-7 יציאות ביום בלבד, חובה להזמין מקומות מראש (לא ניתן לעלות ספונטנית)</li>
-        <li>הזמנה דרך אתר SNCF Connect - לבדוק לוח זמנים ומחיר (כ-8-15€ למבוגר, הערכה) ברגע שמתקרבים לתאריך</li>
+        <li>קיים קו TGV ישיר מתחנת Marne-la-Vallée Chessy ישירות ל-CDG2 TGV - נסיעה של כ-10-11 דקות בלבד!</li>
+        <li>עם בוקר מוגבל כמו היום, זו אופציה משתלמת מאוד - חוסכת כשעה מול ה-RER, ומאפשרת יציאה קצת יותר מאוחרת מהמלון</li>
+        <li>⚠️ לא תדיר - כ-3-7 יציאות ביום בלבד, חובה להזמין מקומות מראש ולוודא שיש יציאה שמתאימה לטיסת 14:45</li>
+        <li>הזמנה דרך אתר SNCF Connect - לבדוק לוח זמנים ומחיר (כ-8-15€ למבוגר, הערכה)</li>
       </ul>
       <div class="badge-row">
         <a class="map-btn" href="https://www.sncf-connect.com/en-en/" target="_blank">🎟️ SNCF Connect</a>
@@ -631,11 +666,11 @@
     </div>
 
     <div class="stop">
-      <div class="stop-time">ערב</div>
+      <div class="stop-time">14:45</div>
       <div class="stop-name">✈️ טיסה חזרה לישראל</div>
-      <div class="stop-desc">להשאיר לפחות 3 שעות מרווח בין הגעה לשדה לזמן הטיסה, בגלל 9 אנשים ומזוודות + אבטחה.</div>
+      <div class="stop-desc">LY328, CDG 14:45 → TLV 20:10. צ'ק-אין ב-CDG נפתח כ-3 שעות מראש - להיות שם לא יאוחר מ-11:45.</div>
       <div class="badge-row">
-        <span class="stamp">✈️ טיסה</span>
+        <span class="stamp">✈️ LY328</span>
       </div>
     </div>
   </div>
@@ -652,13 +687,14 @@
     <h3>Adagio Bercy Village</h3>
     <ul>
       <li>5 דק' מ-Gare de Lyon (RER A ישיר לדיסני, בלי החלפה)</li>
-      <li>דירת Coliving עד 8 אנשים (4 חד"ש + סלון ומטבח משותף)</li>
+      <li>דירת "Apartment" עד 4 אנשים (36 מ"ר) - מדויק למשפחה שלכם</li>
       <li>בתוך שכונת מסעדות/חנויות Bercy Village</li>
-      <li>מטבח מלא בכל יחידה, ארוחת בוקר חינם לילדים עד 16</li>
+      <li>מטבח מלא, ארוחת בוקר חינם לילדים עד 16</li>
       <li>מחוז 12 - נחשב בטוח ושקט</li>
     </ul>
     <div class="badge-row">
       <a class="map-btn" href="https://maps.google.com/?q=Adagio+Paris+Bercy+Village" target="_blank">📍 מפה</a>
+      <a class="map-btn" href="https://all.accor.com/hotel/A0X1/index.en.shtml" target="_blank">🔗 אתר רשמי</a>
     </div>
   </div>
 
@@ -666,7 +702,6 @@
     <h3>Adagio Paris Nation (חלופה)</h3>
     <ul>
       <li>3 דק' הליכה למטרו Daumesnil, כ-15-20 דק' ל-RER A</li>
-      <li>דירות עד 4 אנשים בלבד (אין Coliving)</li>
       <li>קרוב לבסטיי ולמארה</li>
     </ul>
   </div>
@@ -674,14 +709,39 @@
   <div class="cat-title">🏰 יורודיסני</div>
 
   <div class="hotel-card">
-    <span class="pick-tag">✓ מומלץ</span>
-    <h3>Disney's Sequoia Lodge</h3>
+    <span class="pick-tag">✓ הבחירה - 5 כוכבים</span>
+    <h3>Disneyland Hotel (ממש בכניסה לפארק)</h3>
+    <ul>
+      <li>המלון הרשמי היוקרתי ביותר - ממוקם ישירות בכניסה ל-Disneyland Park, חלק מהחדרים עם נוף לטירה</li>
+      <li>עבר שיפוץ ופתיחה מחודשת ביוני 2026 - "Deluxe", "Castle Club" וסוויטות "Signature" בהתאם לרמת שירות ולואונג'</li>
+      <li>מסעדות: La Table de Lumière (פיין-דיינינג, ~120€), La Forêt Secrète (~140-200€), ארוחת דמויות Royal Banquet (~100€ למבוגר)</li>
+      <li>מועדון ילדים חינם (Royal Kids Club, גילאי 4-11), ספא, נסיכות מסתובבות במלון, כניסה ייעודית לפארק - לא צריך שאטל בכלל</li>
+      <li>⚠️ מחיר: כ-800-2,000£ ללילה (2026) - קפיצה עצומה מהמלונות הרגילים</li>
+      <li>💡 אפשר להזמין גם באתרי צד ג' (Booking, Expedia, Agoda), אבל דרך האתר הרשמי מקבלים חבילה עם כרטיסי פארק כלולים + Extra Magic Time ושירותי מלון - בצד ג' לא בטוח שמקבלים את זה, וכדאי גם להתקשר למלון לאשר שההזמנה התקבלה</li>
+    </ul>
+    <div class="badge-row">
+      <a class="map-btn" href="https://www.disneylandparis.com/en-gb/hotels/disneyland-hotel/" target="_blank">🔗 אתר רשמי (מומלץ)</a>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <h3>Disney Hotel New York - The Art of Marvel (4 כוכבים, חלופה)</h3>
+    <ul>
+      <li>אופציית ביניים מבחינת מחיר - נושא מארוול מודרני, טוב לילדים אוהבי גיבורי-על</li>
+    </ul>
+  </div>
+
+  <div class="hotel-card">
+    <h3>Disney's Sequoia Lodge (חלופה משתלמת)</h3>
     <ul>
       <li>הכי משתלם מבין המלונות הרשמיים</li>
       <li>בריכה מקורה, חדרי משפחה עד 5 אנשים</li>
       <li>20-25 דק' הליכה לפארקים, שאטל חינם תדיר</li>
       <li>כולל Extra Magic Time</li>
     </ul>
+    <div class="badge-row">
+      <a class="map-btn" href="https://www.disneylandparis.com/en-gb/hotels/hotel-sequoia-lodge/" target="_blank">🔗 אתר רשמי</a>
+    </div>
   </div>
 
   <div class="hotel-card">
@@ -698,11 +758,19 @@
 <!-- ===================== תחבורה ===================== -->
 <div class="main-panel" id="panel-transit">
 
-  <div class="cat-title">✈️ שדה תעופה → מלון</div>
+  <div class="cat-title">✈️ יציאה משדה התעופה (בן גוריון → CDG)</div>
+
+  <div class="transit-step">
+    <div class="stop-time">בישראל</div>
+    <div class="stop-desc">טיסה ישירה מנתב"ג לשארל דה גול (CDG), כ-4.5 שעות טיסה. חברות: אל על, איזראייר, טרנסאוויה, ווילינג'איר.</div>
+  </div>
 
   <div class="transit-step">
     <div class="stop-time">CDG → Gare de Lyon</div>
-    <div class="stop-desc">RER B מתחת לטרמינל 2 עד Châtelet-Les Halles, מעבר רציף (בלי מדרגות) ל-RER A מזרחה, תחנה אחת עד Gare de Lyon. כ-45-56 דקות. ~10-13€ מבוגר, ~7€ ילד.</div>
+    <div class="stop-desc">RER B מתחת לטרמינל 2 עד Châtelet-Les Halles, מעבר רציף (בלי מדרגות) ל-RER A מזרחה, תחנה אחת עד Gare de Lyon. כ-45-56 דקות. ~10-13€ מבוגר, ~7€ ילד. כרטיסים בקופות אוטומטיות בתחנה או באפליקציה.</div>
+    <div class="badge-row">
+      <a class="map-btn" href="https://www.iledefrance-mobilites.fr/" target="_blank">🎟️ Ile-de-France Mobilités</a>
+    </div>
   </div>
 
   <div class="cat-title">🏰 פריז → יורודיסני</div>
@@ -716,7 +784,10 @@
 
   <div class="transit-step">
     <div class="stop-time">Chessy → CDG</div>
-    <div class="stop-desc">RER A חזרה ל-Châtelet-Les Halles, מעבר ל-RER B ל-CDG. נוח - אין צורך לחזור למרכז פריז ביום הטיסה.</div>
+    <div class="stop-desc">RER A חזרה ל-Châtelet-Les Halles, מעבר ל-RER B ל-CDG (כ-60-70 דק'). חלופה מומלצת: TGV ישיר מ-Chessy ל-CDG, רק 10-11 דקות אבל דורש הזמנה מראש (ראו יום 7 בטיול).</div>
+    <div class="badge-row">
+      <a class="map-btn" href="https://www.sncf-connect.com/en-en/" target="_blank">🎟️ SNCF Connect</a>
+    </div>
   </div>
 
   <div class="cat-title">🎫 כרטיסים</div>
@@ -731,51 +802,45 @@
 <!-- ===================== מסעדות ===================== -->
 <div class="main-panel" id="panel-food">
 
-  <div class="cat-title">🥖 פריז - ברסי / מחוז 12</div>
+  <div class="day-note">
+    🥖 מסעדות שכונתיות אמיתיות, לא מלכודות תיירים - מקום אחד לכל ערב בפריז.
+  </div>
+
+  <div class="cat-title">🍽️ יום 1 - ליד השוק</div>
 
   <div class="stop">
-    <div class="stop-name">Marché d'Aligre</div>
-    <div class="stop-desc">השוק המקומי האמיתי של השכונה - ירקות, גבינות, עוף בגריל. לא תיירותי, טוב לצהריים קליל.</div>
+    <div class="stop-name">ביסטרו באזור Rue d'Aligre</div>
+    <div class="stop-desc">כ-10 דק' הליכה מהמלון, שכונה אמיתית ולא תיירותית. טוב לארוחה קלילה אחרי יום טיסה.</div>
     <div class="badge-row">
-      <a class="map-btn" href="https://maps.google.com/?q=Marche+d%27Aligre+Paris" target="_blank">📍 מפה</a>
+      <a class="map-btn" href="https://maps.google.com/?q=Rue+d%27Aligre+Paris" target="_blank">📍 מפה</a>
     </div>
   </div>
 
+  <div class="cat-title">🍽️ יום 2 - המארה</div>
+
   <div class="stop">
-    <div class="stop-name">⚠️ הימנעו מ-Bercy Village הראשי</div>
-    <div class="stop-desc">הרחוב המסחרי הראשי ליד המלון ברובו רשתות תיירותיות (Indiana Cafe וכו'). כדאי ללכת 10-15 דק' הליכה לכיוון Rue d'Aligre / Rue de Cotte לביסטרו שכונתי אמיתי - נבחר מקומות ספציפיים בהמשך.</div>
+    <div class="stop-name">ביסטרו במארה</div>
+    <div class="stop-desc">אחרי השיט בערב - אזור המארה מלא ביסטרות אמיתיות, לא רק מלכודות תיירים ליד האתרים המרכזיים.</div>
+    <div class="badge-row">
+      <a class="map-btn" href="https://maps.google.com/?q=Le+Marais+Paris" target="_blank">📍 מפה</a>
+    </div>
+  </div>
+
+  <div class="cat-title">🎉 יום 3 - Le Train Bleu (ארוחת בת המצווה)</div>
+
+  <div class="stop">
+    <div class="stop-name">Le Train Bleu</div>
+    <div class="stop-desc">ברזרי היסטורית ומרשימה ממש בתוך Gare de Lyon (5 דק' מהמלון!) - תקרות מצוירות מ-1900, מונומנט לאומי. חוויה "וואו" מושלמת לחגיגת בת המצווה. חובה להזמין מקום מראש.</div>
+    <div class="badge-row">
+      <a class="map-btn" href="https://maps.google.com/?q=Le+Train+Bleu+Gare+de+Lyon+Paris" target="_blank">📍 מפה</a>
+    </div>
   </div>
 
   <div class="cat-title">🎢 Disney Village</div>
 
   <div class="stop">
-    <div class="stop-name">The Steakhouse</div>
-    <div class="stop-desc">הכי טוב בכללי - ארוחה מסודרת, סטייקים. חובה הזמנה מראש.</div>
-    <div class="badge-row"><span class="stamp">🍽️ Table Service</span></div>
-  </div>
-
-  <div class="stop">
-    <div class="stop-name">Annette's Diner</div>
-    <div class="stop-desc">הכי טוב למשפחות - מלצרים על גלגיליות, המבורגרים גדולים, כיף לילדים.</div>
-    <div class="badge-row"><span class="stamp">🍽️ Table Service</span></div>
-  </div>
-
-  <div class="stop">
-    <div class="stop-name">Earl of Sandwich</div>
-    <div class="stop-desc">ארוחה מהירה וזולה, בלי הזמנה מראש.</div>
-    <div class="badge-row"><span class="stamp">⚡ מהיר</span></div>
-  </div>
-
-  <div class="stop">
-    <div class="stop-name">Rainforest Café</div>
-    <div class="stop-desc">הכי הרבה אווירה - ג'ונגל עם בעלי חיים אנימטרוניים. יקר יחסית, חובה הזמנה.</div>
-    <div class="badge-row"><span class="stamp">🍽️ Table Service</span></div>
-  </div>
-
-  <div class="stop">
-    <div class="stop-name">Five Guys</div>
-    <div class="stop-desc">המבורגרים, פתוח גם אחרי סגירת הפארק - טוב לארוחה מאוחרת.</div>
-    <div class="badge-row"><span class="stamp">⚡ מהיר</span></div>
+    <div class="stop-name">The Steakhouse / Annette's Diner / Earl of Sandwich</div>
+    <div class="stop-desc">ראו בטאב הטיול (ימים 4-6) - יש כמה אופציות טובות בתוך הכפר, מפירוט מלא לפי יום.</div>
   </div>
 
 </div>
@@ -799,11 +864,6 @@
   </div>
 
   <div class="stop">
-    <div class="stop-name">Cinémathèque Française / מוזיאונים בברסי</div>
-    <div class="stop-desc">קרוב למלון, אופציה פנימית ליד הבית.</div>
-  </div>
-
-  <div class="stop">
     <div class="stop-name">ביורודיסני - אטרקציות פנימיות</div>
     <div class="stop-desc">הפארקים לא נסגרים בגשם, אבל רוב האטרקציות הגדולות (Frozen Ever After, Ratatouille, Star Wars) פנימיות לגמרי.</div>
   </div>
@@ -814,51 +874,72 @@
 <div class="main-panel" id="panel-extras">
 
   <div class="day-note">
-    💡 אלו תוספות אפשריות שראיתי אצל חברות טיולים ישראליות (רימון ואחרות) ובבלוגים משפחתיים - לא חלק קבוע מהמסלול, לבחור אם רוצים ואיפה לשבץ.
+    💡 אלו תוספות אפשריות - לא חלק קבוע מהמסלול, לבחור אם רוצים ואיפה לשבץ.
+  </div>
+
+  <div class="cat-title">🏰 חלופה ליום ורסאי</div>
+
+  <div class="hotel-card">
+    <span class="pick-tag">⭐ חלופה איכותית לוורסאי</span>
+    <h3>ארמון פונטנבלו (Château de Fontainebleau)</h3>
+    <ul>
+      <li>ארמון מלכותי אמיתי, בשימוש רציף 800+ שנה ע"י 34 מלכים ו-2 קיסרים (כולל נפוליאון) - עתיק יותר מוורסאי</li>
+      <li><b>הרבה פחות עמוס</b> - אותה רמת פאר והיסטוריה, בלי הקהל הענק. טוב יותר אם רוצים בילוי רגוע ולא "מלכודת תיירים"</li>
+      <li>שעות: אפריל-ספטמבר 09:30-18:00, אוקטובר-מרץ 09:30-17:00. <b>סגור בימי שלישי</b> (בשונה מוורסאי שסגור בימי שני)</li>
+      <li>סביב הארמון: יער פונטנבלו הענק - טיולים, טיפוס סלעים, אופניים, וכפר Barbizon הציורי לידו</li>
+      <li>הגעה: רכבת מ-Gare de Lyon לתחנת Fontainebleau-Avon (כ-40-50 דק'), משם אוטובוס קו 1 לארמון</li>
+      <li>מחיר: דומה לוורסאי בערך, ילדים מתחת 18 בד"כ חינם/מוזל</li>
+    </ul>
+    <div class="badge-row">
+      <a class="map-btn" href="https://maps.google.com/?q=Chateau+de+Fontainebleau" target="_blank">📍 מפה</a>
+      <a class="map-btn" href="https://www.chateaudefontainebleau.fr/en/" target="_blank">🎟️ אתר רשמי</a>
+    </div>
   </div>
 
   <div class="hotel-card">
-    <span class="pick-tag">אופציה 1</span>
     <h3>🛍️ La Vallée Village (עיר הבגדים ליד דיסני)</h3>
     <ul>
       <li>קניון אאוטלט עם מותגים בהנחה + פרימארק</li>
-      <li>תחנה אחת לפני Chessy ברכבת RER A - קל לשלב בלי מסלול נוסף</li>
-      <li>הכי הגיוני: בדרך <b>מ</b>-Gare de Lyon <b>ל</b>-דיסני (יום 5), לרדת תחנה קודם ולהמשיך אח"כ, או ביום היציאה מדיסני אם יש זמן לפני הטיסה</li>
-      <li>טוב במיוחד למשפחה השנייה עם הנוער בן 13</li>
+      <li>תחנה אחת לפני Chessy ברכבת RER A - קל לשלב בדרך לדיסני או בדרך חזרה</li>
     </ul>
     <div class="badge-row">
       <a class="map-btn" href="https://maps.google.com/?q=La+Vallee+Village+Paris" target="_blank">📍 מפה</a>
     </div>
   </div>
 
+  <div class="cat-title">🗼 אופציות נוספות לימי פריז</div>
+
   <div class="hotel-card">
-    <span class="pick-tag">אופציה 2</span>
-    <h3>🔬 Cité des Sciences (עיר הילדים - מוזיאון מדע)</h3>
+    <span class="pick-tag">✓ מומלץ חזק לילדים</span>
+    <h3>⛵ גני לוקסמבורג (Jardin du Luxembourg)</h3>
     <ul>
-      <li>מוזיאון מדע ענק לילדים ברובע 19, עם פארק ירוק, נהר וגשרים סביב</li>
-      <li>סיור בצוללת אמיתית (אפשר גם לוותר אם אין זמן)</li>
-      <li>מקום מצוין לפיקניק ולהשתולל בחוץ</li>
-      <li>הכי הגיוני: <b>במקום</b> יום מונמארטר (יום 4) אם מעדיפים משהו יותר "לילדים" מאשר סיור עירוני, או כתוספת ליום גשם</li>
+      <li>בריכה גדולה עם השכרת סירות מפרש עץ (5€ ל-30 דק')</li>
+      <li>גן שעשועים, קרוסלה עתיקה, רכיבה על פוני, תיאטרון בובות</li>
+      <li>כניסה לגן עצמו חינם, רק המתקנים בתשלום סמלי</li>
     </ul>
     <div class="badge-row">
-      <a class="map-btn" href="https://maps.google.com/?q=Cite+des+Sciences+et+de+l%27Industrie+Paris" target="_blank">📍 מפה</a>
+      <a class="map-btn" href="https://maps.google.com/?q=Jardin+du+Luxembourg" target="_blank">📍 מפה</a>
     </div>
   </div>
 
   <div class="hotel-card">
-    <span class="pick-tag">אופציה 3</span>
-    <h3>🗼 מגדל מונפרנאס (תחליף/תוספת לאייפל)</h3>
+    <span class="pick-tag">✓ מומלץ חזק לילדים</span>
+    <h3>🦁 Grande Galerie de l'Évolution (מוזיאון הטבע)</h3>
     <ul>
-      <li>תצפית 210 מ' על פריז, לרוב עם פחות תור מאשר מגדל אייפל</li>
-      <li>אפשר לשלב באותו יום כמו הטרוקדרו (יום 2) כתצפית שנייה, או כתחליף אם התור לאייפל ארוך מדי</li>
+      <li>אולם ענק עם מאות חיות ממוחשות בגודל טבעי - נחשב מכה אצל ילדים</li>
+      <li>מחיר: מבוגר 12€, מתחת לגיל 26 חינם</li>
+      <li>פתוח כל השבוע חוץ מיום ג'</li>
     </ul>
+    <div class="badge-row">
+      <a class="map-btn" href="https://maps.google.com/?q=Grande+Galerie+de+l%27Evolution+Paris" target="_blank">📍 מפה</a>
+    </div>
   </div>
 
   <div class="hotel-card">
-    <h3>🎡 Parc Astérix (לידיעה בלבד - כנראה אין זמן)</h3>
+    <h3>🎡 Parc Astérix (לידיעה בלבד)</h3>
     <ul>
-      <li>פארק שעשועים צרפתי (לא-דיסני) על בסיס אסטריקס ואובליקס, משולב לפעמים בחבילות טיולים מאורגנים</li>
-      <li>עם 3 ימי דיסני שכבר בתכנון, כנראה יהיה עומס מיותר - צוין כאן רק כדי שתדעו שהוא קיים</li>
+      <li>פארק שעשועים צרפתי (לא-דיסני) על בסיס אסטריקס ואובליקס</li>
+      <li>עם 3 ימי דיסני שכבר בתכנון, כנראה יהיה עומס מיותר - צוין רק כדי שתדעו שהוא קיים</li>
     </ul>
   </div>
 
@@ -867,40 +948,29 @@
     <ul>
       <li><b>יום אחד / פארק אחד</b> - הכי בסיסי</li>
       <li><b>יום אחד / 2 פארקים</b> - כניסה גם ל-Disneyland Park וגם ל-Disney Adventure World באותו יום</li>
-      <li><b>Multi-Day (2-4 ימים)</b> - מתאים לנו עם 2-3 ימי פארק</li>
-      <li><b>Premier Access</b> - כרטיס עם דילוג תורים במתקנים המבוקשים - שווה לשקול עם 9 אנשים כדי לא לבזבז שעות בתור</li>
-      <li><b>כרטיסים משולבים</b> - יש שילובים עם הלובר, מגדל אייפל, שייט בסן, ורסאי - יכול לחסוך כסף אם נרצה לשלב</li>
-      <li><b>כרטיס + שאטל מפריז</b> - קיים כאופציה לרכבים ששוכרים שאטל ולא RER, לא רלוונטי לנו כי כבר תכננו RER</li>
+      <li><b>Multi-Day (2-4 ימים)</b> - מתאים לנו</li>
+      <li><b>Premier Access</b> - כרטיס עם דילוג תורים</li>
+      <li><b>כרטיסים משולבים</b> - יש שילובים עם הלובר, מגדל אייפל, שייט בסן, ורסאי</li>
     </ul>
     <div class="badge-row">
-      <span class="stamp">⚠️ אתר לא רשמי</span>
+      <a class="map-btn" href="https://www.disneylandparis.com/en-gb/tickets/" target="_blank">🎟️ כרטיסים - אתר רשמי</a>
+      <a class="map-btn" href="https://www.disneyland.org.il/" target="_blank">🔗 מדריך בעברית</a>
     </div>
   </div>
 
 </div>
 
 <footer>
-  נבנה עבור בני ועידית · לוח זמנים ומחירים ישתנו - לעדכן קרוב לתאריך הטיול
+  לוח זמנים ומחירים ישתנו - לעדכן קרוב לתאריך הטיול
 </footer>
 
 <script>
-  // ניווט ראשי
   document.querySelectorAll('.main-tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.main-tab-btn').forEach(b => b.classList.remove('active'));
       document.querySelectorAll('.main-panel').forEach(p => p.classList.remove('active'));
       btn.classList.add('active');
       document.getElementById('panel-' + btn.dataset.main).classList.add('active');
-    });
-  });
-
-  // ניווט בין ימים
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById('day-' + btn.dataset.day).classList.add('active');
     });
   });
 </script>
